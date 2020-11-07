@@ -3,8 +3,8 @@
 import noise
 
 
-bird_image_path = r'data/hawk.jpg'
-image = cv2.imread(bird_image_path, cv2.IMREAD_GRAYSCALE)
+bird_image_path = r'data/birdo.jpg'
+image = cv2.imread(bird_image_path, cv2.IMREAD_UNCHANGED)
 
 # noisy_bird = noise.salt_pepper(image.transpose(2, 1, 0), 0.9)
 # noisy_bird = noisy_bird.transpose(2, 1, 0)
