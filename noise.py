@@ -30,11 +30,11 @@ def salt_pepper_v2(image, amount):
     # Salt mode
     num_salt = np.ceil(amount * image.size * s_vs_p)
     coords = [np.random.randint(0, i - 1, int(num_salt)) for i in image.shape]
-    out[coords] = 255
+    out[coords] = 200
 
     # Pepper mode
     num_pepper = np.ceil(amount * image.size * (1. - s_vs_p))
     coords = [np.random.randint(0, i - 1, int(num_pepper)) for i in image.shape]
-    out[coords] = 0
+    out[coords] = 100
 
     return out
